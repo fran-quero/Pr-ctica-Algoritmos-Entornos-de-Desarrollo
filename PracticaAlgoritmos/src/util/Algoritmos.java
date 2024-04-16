@@ -30,5 +30,24 @@ public abstract class Algoritmos {
                 
                 return numFinal;
     }
+	
+	
+	/**
+	 * Devuelve el numero factorial
+	 * 
+	 * @param numero	el numero al que queremos calcularle el factorial
+	 * @return			el resultado factorial del numero pasado
+	 */
+	public static int factorial(int num) {
+		
+		int numFinal=1;
+		
+		for(int i=2;i<=num;i++) {
+			numFinal*=i;
+		}
+		
+		return numFinal;
+		
+	}
 
 }
