@@ -49,5 +49,24 @@ public abstract class Algoritmos {
 		return numFinal;
 		
 	}
+	
+	
+	/**
+	 * Devuelve si el numero pasado es primo, con true o false.
+	 * 
+	 * @param numero	el numero que se quiere comprobar si es primo
+	 * @return			true si el numero es primo, false si el numero no es primo
+	 */
+	public static boolean esPrimo(int num) {
+		
+		for(int i=2;i<num;i++) {
+			if(num%i==0) {
+				return false;
+			}
+		}
+		
+		return true;
+		
+	}
 
 }
